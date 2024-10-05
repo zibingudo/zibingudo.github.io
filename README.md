@@ -2,8 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>给Sharon的邀请函</title>
+    <title>给小骷髅兵的神秘邀请函</title>
     <style>
+        /* 保持原有的样式不变 */
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+SC:wght@400;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap');
         body {
             font-family: 'Noto Serif SC', serif;
@@ -74,6 +75,28 @@
             padding: 20px;
             margin-top: 20px;
         }
+        #passwordForm {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #password {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ffc0cb;
+            border-radius: 5px;
+        }
+        #submitPassword {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #content {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -82,24 +105,42 @@
         <div class="heart" style="bottom: 30px; left: 50px;"></div>
         <div class="heart" style="top: 50%; right: 60px;"></div>
         <h1>Sharon宝贝</h1>
-        <div class="border">
-            <p>虽然说是情书，但我也不知道怎么开始，为了保持情感的真挚我特意没有查看什么AI小助手怎么样开始写，我只能想到哪儿写到哪儿。</p>
-            
-            <p>说好要补的表白断断续续已经过去了一个月，和开始在车上的断断续续的表白感受到的对于未来困惑和新关系的畏惧，这样的情感逐渐在我们日日的真心相谈下被逐渐冲淡，在这段关系的试用期里，我看到了很多你未曾展现的另一面。</p>
-            
-            <p>一天二十四小时不同的面貌，我越看越觉得，每一秒对我来说都是格外的重要，不知不觉间，我的生活中已经不能没有了你的存在，我后知后觉般的意识到我对你的爱意是有怎样的深切。</p>
-            
-            <p>在写这封信的时候我的脑海中总是能够浮现出你在我下课的时候的角落微笑着迎接我的样子，我对那微笑深深地我实在想不出怎样辞藻形容我心中的感动，但是这种在世界上不是孤单一人的感受真的比我心中想过的要更加好上更多。</p>
-            
-            <p>是你带我见识了世界上更多的我这辈子一个人无法见识到的美景，是你让我了解到了更多的人的差异性，也是你让我对这个我已经放弃了许多的世界重新燃起了一丝的热情。</p>
-            
-            <p>你一直说想被我坚定的选择，那这份信就是经过了我每天日思夜想无论是通过脑筋还是神经的苦思冥想得出的结果。我不是个太会表达心理情绪的人，我可能也没法给你带来像是你给我带来的那样的感动，但是我希望你能接受这份朝向我们未来生活的邀请函。</p>
-            
-            <p>希望你能接受我这颗笨拙内心的炽热。我爱你，请让我能陪你度过你的余生。</p>
+        <div id="passwordForm">
+            <p>我亲爱的小骷髅兵，请输入我们的特别日子来解锁这封信 (格式：MMDD)</p>
+            <input type="password" id="password" placeholder="输入密码">
+            <button id="submitPassword">解锁我的心意</button>
         </div>
-        <div class="signature">
-            <p>你的宝贝凯文</p>
+        <div id="content">
+            <div class="border">
+                <p>虽然说是情书，但我实在不知从何开始。为了保持情感的真挚，我特意没有借鉴任何网上的告白或是书本上的句子，只是让思绪自由流淌，想到哪里写到哪里。</p>
+                
+                <p>说好要补的表白，断断续续已经过去了一个月。回想起最初在车上那断断续续的表白，对未来的困惑和对新关系的畏惧，如今已在我们日日夜夜的真心相谈中逐渐消散。在这段关系的"试用期"里，我看到了许多你未曾向他人展现的一面，而我越看越觉得，你的每一秒对我来说都弥足珍贵。不知不觉间，我的生活已离不开你的存在，我后知后觉地意识到，我对你的爱意竟是如此深切。</p>
+                
+                <p>在写下这封信时，我的脑海中总是浮现出你在角落里微笑着迎接下课的我的样子。我对那微笑深深着迷，却又难以用华丽的辞藻来形容内心的感动。这种不再孤单的感受，比我想象中还要美好许多。</p>
+                
+                <p>就像我们一起画的那幅画，你的世界里不仅有一个孤单的小女孩坐在船上，还有许许多多有趣的元素——吃豆人、哥斯拉，还有泡泡糖机。我不知你是否和我感同身受，但我希望你能明白，无论你的小船划到哪里，这些都会一直陪伴着你。</p>
+                
+                <p>是你带我领略了这辈子可能独自无法见识的美景，是你让我了解到人与人之间更多的差异性，也是你让我对这个我已经有些放弃的世界重新燃起了热情。</p>
+                
+                <p>你一直说想被我坚定地选择，这封信就是我日思夜想，绞尽脑汁得出的结果。我可能不太善于表达内心的情绪，也可能无法给你带来像你给我的那样的感动，但我真诚地希望你能接受这份指向我们未来生活的邀请函。</p>
+                
+                <p>希望你能接纳我这颗笨拙却炽热的心。我爱你，请让我有幸能陪你度过余生的每一天。</p>
+            </div>
+            <div class="signature">
+                <p>你的宝贝凯文</p>
+            </div>
         </div>
     </div>
+    <script>
+        document.getElementById('submitPassword').addEventListener('click', function() {
+            var password = document.getElementById('password').value;
+            if(password === "0902") {
+                document.getElementById('passwordForm').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('💀嘟嘟哒嘟嘟哒💀');
+            }
+        });
+    </script>
 </body>
 </html>
